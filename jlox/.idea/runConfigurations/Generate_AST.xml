@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Generate AST" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.rts.tool.GenerateAST" />
+    <module name="jlox" />
+    <option name="PROGRAM_PARAMETERS" value="src/com/rts/lox" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
