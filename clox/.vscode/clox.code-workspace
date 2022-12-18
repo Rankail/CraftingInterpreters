@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.h": "c"
+		},
+		"code-runner.executorMap": {
+			"c": "gcc -o out/clox.exe src/**.c && $workspaceRoot/out/clox.exe",
+		}
+	}
+}
