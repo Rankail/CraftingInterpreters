@@ -9,7 +9,7 @@
 			"*.h": "c"
 		},
 		"code-runner.executorMap": {
-			"c": "gcc -o out/clox.exe src/**.c && start $workspaceRoot/out/clox.exe",
+			"c": "gcc -o out/clox.exe src/**.c -Wno-incompatible-pointer-types && start $workspaceRoot/out/clox.exe",
 		}
 	}
 }
