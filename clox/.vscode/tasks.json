@@ -7,17 +7,73 @@
             "label": "clox: script test.clox",
             "type": "shell",
             "options": {
-                "cwd": "${workspaceFolder}/out",
+                "cwd": "${workspaceFolder}/out"
             },
-            "command": "./clox.exe test.clox"
+            "command": "./clox.exe test.clox",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": []
         },
         {
             "label": "clox: REPL",
             "type": "shell",
             "options": {
-                "cwd": "${workspaceFolder}/out",
+                "cwd": "${workspaceFolder}/out"
             },
-            "command": "./clox.exe"
+            "command": "./clox.exe",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "compile unoptimized",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "gcc -o out/clox.exe src/**.c -Wno-incompatible-pointer-types -DDEBUG_PRINT_CODE",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "compile optimized",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "gcc -o out/clox.exe src/**.c -Ofast -Wno-incompatible-pointer-types",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "problemMatcher": []
         }
     ]
 }

@@ -9,7 +9,7 @@
 			"*.h": "c"
 		},
 		"code-runner.executorMap": {
-			"c": "gcc -o out/clox.exe src/**.c -Wno-incompatible-pointer-types && echo done",
+			"c": "gcc -o out/clox.exe src/**.c -DDEBUG_TRACE_EXECUTION -DDEBUG_PRINT_CODE -Wno-incompatible-pointer-types && echo done",
 		}
 	}
 }
