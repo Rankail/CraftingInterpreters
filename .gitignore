@@ -1,0 +1,8 @@
+clox_vs/.vs
+clox_vs/bin
+clox_vs/bin-int
+clox_vs/**.sln
+clox_vs/clox/**.vcxproj
+clox_vs/clox/**.vcxproj.user
+
+clox/out/clox.exe
